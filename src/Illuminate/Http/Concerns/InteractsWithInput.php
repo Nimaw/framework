@@ -45,7 +45,7 @@ trait InteractsWithInput
         $keys = is_array($key) ? $key : func_get_args();
 
         foreach ($keys as $key) {
-            if (!$this->hasHeader($key)) {
+            if (! $this->hasHeader($key)) {
                 return false;
             }
         }
